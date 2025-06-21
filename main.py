@@ -33,7 +33,7 @@ app = Flask(__name__)
 
 # --- Configuration ---
 # IMPORTANT: Replace with your actual TMDb API Key
-TMDB_API_KEY = os.environ.get('TMDB_API_KEY')
+TMDB_API_KEY = '84e5de76a36aa739e089fbcd4d63a0e9'
 
 # --- Load Data and Models (Global for efficiency) ---
 df = None
@@ -257,5 +257,5 @@ def get_movie_reviews():
 
     return jsonify({'reviews': processed_reviews})
 
-# if __name__ == '__main__':
-#     app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)

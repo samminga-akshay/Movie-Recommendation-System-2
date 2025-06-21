@@ -4,7 +4,7 @@
 let selectedMovieData = null;
 
 // TMDb API Key (constant for API calls).
-// const TMDB_API_KEY = '84e5de76a36aa739e089fbcd4d63a0e9';
+const TMDB_API_KEY = '84e5de76a36aa739e089fbcd4d63a0e9';
 
 // Using jQuery's ready function for broader compatibility with Bootstrap components
 // and for easier event delegation.
