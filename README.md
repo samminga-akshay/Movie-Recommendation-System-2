@@ -38,8 +38,9 @@ Follow these steps to get the project up and running on your local machine:
 ```bash
 git clone [https://github.com/samminga-akshay/Movie-Recommendation-System-with-Sentiment-Analysis.git](https://github.com/samminga-akshay/Movie-Recommendation-System-with-Sentiment-Analysis.git)
 cd Movie-Recommendation-System-with-Sentiment-Analysis
+```
 
-5.2. Create and Activate a Virtual Environment (Recommended)
+### 5.2. Create and Activate a Virtual Environment (Recommended)
 It's highly recommended to use a virtual environment to manage project dependencies.
 
 python -m venv venv
@@ -48,12 +49,12 @@ python -m venv venv
 # On macOS/Linux:
 source venv/bin/activate
 
-5.3. Install Dependencies
+### 5.3. Install Dependencies
 Install all the required Python packages using pip:
 
 pip install -r requirements.txt
 
-5.4. Obtain and Set Up TMDb API Key
+### 5.4. Obtain and Set Up TMDb API Key
 Go to The Movie Database (TMDb) website and sign up for a free account.
 Once logged in, go to your account settings and request an API key (a developer key is usually sufficient).
 IMPORTANT:
@@ -61,7 +62,7 @@ Open main.py and locate the line TMDB_API_KEY = 'YOUR_TMDB_API_KEY_HERE'. Replac
 Open static/js/recommend.js and locate the line const TMDB_API_KEY = 'YOUR_TMDB_API_KEY_HERE';. Replace 'YOUR_TMDB_API_KEY_HERE' with your actual TMDb API key.
 (Optional but recommended for larger projects): For production environments, it's best practice to load API keys from environment variables (e.g., using a .env file and python-dotenv). For simplicity in this academic project, direct replacement is used for demonstrative purposes in the appendix.
 
-5.5. Prepare Data and Models
+### 5.5. Prepare Data and Models
 The project requires preprocessed movie data and a trained sentiment analysis model.
 
 Run the Data Fetching and Preprocessing Script: This script (fetch_and_preprocess_data.py) will download initial movie data and clean it, generating main_data.csv. This CSV file forms the basis for content-based recommendations.
