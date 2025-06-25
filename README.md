@@ -73,13 +73,14 @@ If you converted it to a sentiment.py script:
 
 python sentiment.py
 (Note: The large reviews.csv dataset, which is used for training the sentiment model, is not included in this repository due to its size. It can be obtained from the IMDb 50K Movie Reviews Dataset on Kaggle. The sentiment script will guide you on where to place it.)
-6. Running the Application
+
+## 6. Running the Application
 After completing the setup steps, you can run the Flask application:
 
 python main.py
 The application will typically run on http://127.0.0.1:5000/ or http://localhost:5000/. Open this URL in your web browser.
 
-7. Project Structure
+## 7. Project Structure
 MovieRecommendationSystem/
 ├── main.py                          # Flask application entry point
 ├── fetch_and_preprocess_data.py     # Script to fetch & preprocess movie data
@@ -101,7 +102,7 @@ MovieRecommendationSystem/
     ├── home.html
     └── recommend.html
 
-8. Credits and Acknowledgements
+## 8. Credits and Acknowledgements
 The Movie Database (TMDb): All movie data, images, and reviews are sourced from the TMDb API.
 NLTK (Natural Language Toolkit): Used for text preprocessing (stopwords, stemming).
 scikit-learn: Utilized for TF-IDF vectorization, Cosine Similarity, and machine learning models.
@@ -109,5 +110,5 @@ Flask: The web framework used for the backend.
 Bootstrap: Frontend styling framework.
 jQuery: JavaScript library for DOM manipulation and AJAX.
 
-9. License
+## 9. License
 This project is open-source and available under the MIT License. See the LICENSE file for more details.
